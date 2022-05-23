@@ -1,0 +1,37 @@
+# @name getAllUsers
+GET http://localhost:4040/api/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5YjU4NjI5MzU4MjUxZDBkMmQ0NTgiLCJpYXQiOjE2NTMyMDc3NDIsImV4cCI6MTY1MzIwNzc3Mn0.gCKpGxA_iOaZCP53hKI03mOVFZp8BGKLeFt7K6wl4Ag
+
+###
+
+# @name register
+POST http://localhost:4040/api/user/register
+Content-Type: application/json
+
+{
+  "username": "6@gmail.com",
+  "password": "1231231232"
+}
+###
+
+# @name login
+POST http://localhost:4040/api/user/login
+Content-Type: application/json
+
+{
+  "username": "5@gmail.com",
+  "password": "1231231232"
+}
+###
+
+# @name refreshToken
+POST http://localhost:4040/api/user/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5YjU4NjI5MzU4MjUxZDBkMmQ0NTgiLCJpYXQiOjE2NTMyMDY4MTIsImV4cCI6MTY4NDc2NDQxMn0.37sPf9ofBR6_rxRbXs_91ba13F9_d85x0LLgNlo_8G4"
+}
+###
+
+# @name logout
+POST http://localhost:4040/api/user/logout
